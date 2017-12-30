@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>0.0.0.0</Version>
+    <FileVersion>0.0.0.0</FileVersion>
+    <InformationalVersion>0.0.0</InformationalVersion>
+    <Authors>maldworth</Authors>
+    <Description>StarterKit MassTransit Service</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.1" />
+    <PackageReference Include="MassTransit.AzureServiceBus" Version="3.5.7" />
+    <PackageReference Include="MassTransit.SerilogIntegration" Version="3.5.7" />
+    <PackageReference Include="Serilog" Version="2.5.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.2" />
+    <PackageReference Include="Serilog.Sinks.AzureDocumentDb" Version="3.6.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.RollingFileAlternate" Version="2.0.9" />
+    <PackageReference Include="Topshelf" Version="4.0.3" />
+    <PackageReference Include="Topshelf.Serilog" Version="4.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StarterKit.Contracts\StarterKit.Contracts.csproj" />
+    <ProjectReference Include="..\StarterKit.Module\StarterKit.Module.csproj" />
+  </ItemGroup>
+</Project>

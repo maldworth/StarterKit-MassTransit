@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>0.0.0.0</Version>
+    <FileVersion>0.0.0.0</FileVersion>
+    <InformationalVersion>0.0.0</InformationalVersion>
+    <Authors>maldworth</Authors>
+    <Description>StarterKit Module</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.1" />
+    <PackageReference Include="LibLog" Version="4.2.6" />
+    <PackageReference Include="MassTransit.Autofac" Version="3.5.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StarterKit.Contracts\StarterKit.Contracts.csproj" />
+  </ItemGroup>
+</Project>
